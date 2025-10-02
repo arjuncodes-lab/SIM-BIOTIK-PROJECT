@@ -1,0 +1,33 @@
+<div class="d-flex">
+  <div class="d-flex flex-column flex-shrink-0 p-3 text-white bg-dark" style="width: 250px; height: 100vh;">
+    <a href="/" class="d-flex align-items-center mb-3 mb-md-0 me-md-auto text-white text-decoration-none">
+      <span class="fs-4 fw-bold">Simbiotik Tests</span>
+    </a>
+    <hr>
+    <ul class="nav nav-pills flex-column mb-auto">
+      <li class="nav-item">
+        <a routerLink="todo" routerLinkActive="active" class="nav-link text-white rounded">
+          TODO CRUD
+        </a>
+      </li>
+      <li class="nav-item">
+        <a routerLink="weather" routerLinkActive="active" class="nav-link text-white rounded">
+          Weather Test
+        </a>
+      </li>
+      <li class="nav-item">
+        <a routerLink="map-routing" routerLinkActive="active" class="nav-link text-white rounded">
+          Map Routing
+        </a>
+      </li>
+    </ul>
+    <hr>
+    <button (click)="logout()" class="btn btn-danger w-100 mt-auto">
+      Logout
+    </button>
+  </div>
+
+  <main class="flex-grow-1 p-4 overflow-auto" style="height: 100vh;">
+    <router-outlet></router-outlet>
+  </main>
+</div>

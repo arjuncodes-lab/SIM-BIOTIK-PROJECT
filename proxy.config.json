@@ -1,0 +1,11 @@
+{
+    "/api": {
+      "target": "https://du-test-api.simbiotiktech.in",
+      "secure": false,
+      "changeOrigin": true,
+      "logLevel": "debug",
+      "pathRewrite": {
+        "^/api": ""
+      }
+    }
+}
