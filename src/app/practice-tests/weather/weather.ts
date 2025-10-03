@@ -14,7 +14,7 @@ interface ForecastDay {
   standalone: true,
   imports: [NgIf, NgFor, FormsModule, DatePipe],
   templateUrl: './weather.html',
-  styleUrls: ['./weather.scss']  // optional, if you have CSS
+  styleUrls: ['./weather.scss'] 
 })
 export class Weather implements OnInit {
   city = 'Bengaluru';
