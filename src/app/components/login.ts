@@ -74,7 +74,7 @@ errorMessage: string = '';
 
   this.http
     .post<{ accessToken: string }>(
-      'api/users/login',
+      'du-test-api.simbiotiktech.in/users/login',
       { username, password },
       { headers: { 'Content-Type': 'application/json' } }
     )
