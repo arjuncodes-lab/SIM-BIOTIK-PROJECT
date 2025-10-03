@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { CommonModule } from '@angular/common';
+import { environment } from '../../environments/environment'; // Adjust path if needed
 import {
   ReactiveFormsModule,
   FormBuilder,
@@ -74,7 +75,7 @@ errorMessage: string = '';
 
   this.http
     .post<{ accessToken: string }>(
-      'du-test-api.simbiotiktech.in/users/login',
+      `${environment.apiBaseUrl}/users/login`,
       { username, password },
       { headers: { 'Content-Type': 'application/json' } }
     )
